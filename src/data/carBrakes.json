@@ -1,0 +1,22 @@
+{
+    "Car Brakes": {
+    "id" : 2,
+      "title": "Car Brakes",
+      "image": "carburetor bajaj avenger 220.webp",
+      "products": [
+        {
+            "id": 201,  
+          "save": "Save Rs. 420.00",
+          "img": "https://www.earls.com.au/home/wp-content/uploads/2015/09/0-80812BK.jpg",
+          "name": "Engine Part 1",
+          "rating": 5,
+          "description": "Durable engine part.",
+          "price": "Rs. 3000.00",
+          "MRP": "Rs. 4490.00",
+          "stock": "In Stock"
+        }
+        
+      ]
+    }
+  }
+  

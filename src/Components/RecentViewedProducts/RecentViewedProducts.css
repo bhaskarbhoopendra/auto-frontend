@@ -1,0 +1,50 @@
+.recently-viewed-products {
+    margin-top: 2rem; /* Space above the section */
+}
+
+.recently-viewed-products h3 {
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.recent-products-container {
+    display: flex; /* Use flexbox to arrange product cards in a row */
+    justify-content: space-between; /* Space between each card */
+    margin-top: 1rem; /* Space above the products */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.product-card {
+    width: calc(25% - 1rem); /* Set width to allow four cards in a row */
+    padding: 1rem;
+    border: 1px solid #ccc; /* Border for the card */
+    text-align: center; /* Center align text */
+    background-color: white; /* Background color */
+    margin: 0.5rem; /* Space around each card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.product-card img {
+    width: 100%; /* Image takes full width of card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-card .price {
+    font-weight: bold; /* Bold price */
+    color: black; /* Price color */
+    margin-top: 0.5rem; /* Space above price */
+}
+
+.product-card .mrp {
+    text-decoration: line-through; /* Strikethrough for MRP */
+    color: gray; /* Gray color for MRP */
+}
+
+.product-card .save {
+    color: red; /* Color for save amount */
+    font-weight: bold; /* Bold save amount */
+}
+
+.vehicle-compatibility {
+    margin-top: 0.5rem; /* Space above vehicle compatibility text */
+    font-size: 0.9rem; /* Smaller font for compatibility */
+}

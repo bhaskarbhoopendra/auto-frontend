@@ -1,0 +1,81 @@
+
+
+.brand-section {
+  padding: 3rem;
+  background-color: #F3F5F6;
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 2.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.brand-link {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.brand-image {
+  width: 180px;
+  height: 180px; /* Adjusted height for consistent look */
+  object-fit: contain;
+  background-color: #fff;
+  padding: 1.2rem;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 25px; */
+  transition: transform 0.3s;
+  margin-bottom: 1rem; /* Space between image and category name */
+}
+
+.brand-image:hover {
+  transform: scale(1.05);
+}
+
+.brand-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.6rem;
+}
+
+.category-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem; /* Space between category and brand info */
+}
+
+.category-brand img {
+  width: 30px;
+  height: 30px; /* Adjust brand logo size */
+  object-fit: contain;
+  border-radius: 50%; /* Optional: to make the brand image circular */
+}
+
+.category-brand-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #666;
+  margin-left: 0.5rem; /* Space between brand logo and name */
+}

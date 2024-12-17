@@ -1,0 +1,31 @@
+{
+  "Carburetor": {
+    "id": 1,
+    "title": "Carburetor",
+    "image": "carburetor_bajaj_avenger_220.webp",
+    "products": [
+      {
+        "id": 101,  
+        "name": "Carburetor Model 1",
+        "img": "https://th.bing.com/th/id/OIP.28-CYl6r5NtfAZyK3uZ2CAHaFV?rs=1&pid=ImgDetMain",
+        "description": "Description for Carburetor Model 1",
+        "price": "$100",
+        "MRP": "$120",
+        "stock": "Available",
+        "save": "Save $20!",
+        "rating": 4
+      },
+      {
+        "id": 102,  
+        "name": "Carburetor Model 2",
+        "img": "https://th.bing.com/th/id/OIP.28-CYl6r5NtfAZyK3uZ2CAHaFV?rs=1&pid=ImgDetMain",
+        "description": "Description for Carburetor Model 2",
+        "price": "$110",
+        "MRP": "$130",
+        "stock": "Out of Stock",
+        "save": "Save $20!",
+        "rating": 5
+      }
+    ]
+  }
+}

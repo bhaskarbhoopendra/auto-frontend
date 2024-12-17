@@ -1,0 +1,161 @@
+/* General container styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 0 20px; /* Added padding to create white space on the sides */
+}
+
+.login-box {
+    width: 100%;
+    max-width: 500px; /* Increased max width for a larger container */
+    padding: 30px 70px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding is included in the element’s total width and height */
+    margin: 0 auto; /* Centers the box horizontally */
+}
+
+/* Heading and paragraph styling */
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Input container styling */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px; /* Increased padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ensures the input takes full width of its container */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    font-size: 14px; /* Adjusted font size for better readability */
+}
+
+input:focus {
+    border-color: #7b2cbf;
+    outline: none;
+}
+
+/* Floating label styling */
+.input-container label {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 12px; /* Adjusted left positioning */
+    font-size: 14px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    transform: translateY(-50%); /* Center vertically with respect to input */
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -8px; /* Adjusted top positioning */
+    left: 8px; /* Adjusted left positioning */
+    font-size: 12px;
+    color: #7b2cbf;
+    transform: none; /* Remove transform when label is floating */
+}
+
+/* Button styles */
+.login-button {
+    background-color: #7b2cbf;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.login-button:hover {
+    background-color: #6a1b9a;
+}
+
+/* OR divider styling */
+.or-divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.or-text {
+    margin: 0 10px;
+}
+
+/* Google button styling */
+/* Google button styling */
+.google-btn {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Center the text */
+    align-items: center;
+    position: relative; /* Relative positioning for image */
+    box-sizing: border-box;
+}
+
+.google-btn img {
+    position: absolute;
+    left: 10px; /* Position image on the left */
+    width: 20px; /* Adjust the size of the Google image */
+    height: 20px;
+}
+
+.google-btn:hover {
+    border-color: #000;
+}
+
+
+/* Forgot password and new account text styling */
+.forgot-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.recover-link {
+    color: #7b2cbf;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.new-account-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.register-link {
+    color: #7b2cbf;
+    text-decoration: underline;
+    cursor: pointer;
+}

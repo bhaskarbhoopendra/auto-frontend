@@ -1,0 +1,23 @@
+{
+    "engineData1": {
+      "title": "Engine & Fuel Systems",
+      "engineItems": [
+        { "name": "Carburetor", "url": "https://example.com/carburetor", "imageKey": "carburetorBajajAvenger220" },
+        { "name": "Carburetor Repair Kit", "url": "https://example.com/fuelinjector", "imageKey": "carburetorRepairKitGlamor" },
+        { "name": "Connecting Road Kit", "url": "https://example.com/roadkit", "imageKey": "roadKit" },
+        { "name": "Crank Shaft", "url": "https://example.com/crankshaft", "imageKey": "crankShift" },
+        { "name": "Engine Valve Set", "url": "https://example.com/enginevalve", "imageKey": "engineValveSet" }
+      ]
+    },
+    "engineData2": {
+      "title": "Break, Electrical & Gear Pinion Set",
+      "engineItems": [
+        { "name": "Dominor 250", "url": "https://example.com/dominor", "imageKey": "dominor" },
+        { "name": "Gear Pinion Set", "url": "https://example.com/gearpinion", "imageKey": "advancedCarburetor" },
+        { "name": "Starter Oil Plate assembly", "url": "https://example.com/airfilter", "imageKey": "airFilterSystem" },
+        { "name": "Speedometer", "url": "https://example.com/speedometer", "imageKey": "speedometer" },
+        { "name": "Fuel Pump", "url": "https://example.com/fuelpump", "imageKey": "fuelPump" }
+      ]
+    }
+  }
+  

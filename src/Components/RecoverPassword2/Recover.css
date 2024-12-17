@@ -1,0 +1,77 @@
+.recover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+  }
+  
+  .recover-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-container input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    font-size: 14px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    transform: translateY(-50%);
+  }
+  
+  .input-container input:focus + label,
+  .input-container input:not(:placeholder-shown) + label {
+    top: -19px;
+    left: 8px;
+    font-size: 12px;
+    color: #7b2cbf;
+  }
+  
+  .recover-button {
+    background-color: #7b2cbf;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .recover-button:hover {
+    background-color: #6a1b9a;
+  }
+  

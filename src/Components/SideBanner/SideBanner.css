@@ -1,0 +1,40 @@
+.men-FreeShippingBanner-sidebar {
+    position: fixed;
+    bottom: 180px; /* Adjust as needed to move the banner vertically */
+    right: 0;      /* Position it on the right side of the screen */
+    width: 44px;
+    height: 288px;
+    background-color: #5b5366;
+    z-index: 6;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.men-FreeShippingBanner-sidebar-content {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    width: 36px;
+    padding: 4px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    color: #fcfcfc;
+    display: inline-block;
+}
+
+.men-FreeShippingBanner {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid white;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    margin-bottom: 2rem;
+    transform: rotate(45deg);
+}

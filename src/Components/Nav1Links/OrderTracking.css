@@ -1,0 +1,123 @@
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 41%;
+    margin: 0 auto; /* Horizontal centering */
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px; /* Space above the form */
+    margin-bottom: 130px; /* Space below the form for the footer */
+  }
+  
+  /* Styling for the logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between the text and the image */
+    /* animation: fadeInLogo 2s ease-in-out; */
+  }
+  
+  
+  /* Animation for the logo image */
+  .logo img {
+    width: 70px;
+    height: auto;
+    /* animation: rotateLogo 1.5s ease-in-out infinite; */
+  }
+  
+  /* Keyframe for the logo fade-in and scale */
+  @keyframes fadeInLogo {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Keyframe for text sliding in from below */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframe for rotating the logo image */
+  @keyframes rotateLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Styling for other elements */
+  .bd {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 4rem;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus {
+    border: 1px solid rgba(14, 14, 14);
+    outline: none;
+  }
+  
+  p {
+    margin: 5px 0 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .fetch-details-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6b3b8b;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .fetch-details-button:hover {
+    background-color: #512c6a;
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,96 @@
+.carburetor-page-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 60px; /* Corrected syntax */
+}
+
+
+.filter-section {
+    width: 25%; /* Adjust width as needed */
+    padding: 1rem; /* Add padding for spacing */
+    box-shadow: 0 0 6px #cac8c8;
+    box-sizing: border-box;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    /* Remove fixed height */
+    height: auto; /* Let height adjust based on content */
+}
+
+.product-section {
+    width: 75%; /* Adjust width as needed */
+    margin-left: 20px; /* Gap between filter and product section */
+
+}
+
+.filter-item {
+    margin-bottom: 10px; /* Reduced margin for tighter spacing */
+}
+
+.filter-item label {
+    display: flex;
+    align-items: center; /* Center vertically */
+    line-height: 1.5; /* Standardize label height */
+}
+
+.filter-item input[type="checkbox"] {
+    height: 20px; /* Set desired height */
+    width: 20px; /* Set desired width */
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-icon.open {
+    transform: rotate(180deg); /* Rotate the icon when open */
+}
+
+.flex-cnt {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: space-between; /* Adjusts spacing between items */
+}
+
+.product-cnt {
+    flex: 1 1 calc(23% - 20px); /* Adjust width to fit 4 items with space */
+    margin: 10px; /* Space between product containers */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+  /* Add hover effect */
+  .product-cnt:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-cnt:focus,
+.product-cnt:active {
+  animation: pulse 0.5s infinite; /* Pulse effect */
+}
+
+/* Keyframes for pulse effect */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.05); /* Slightly larger */
+  }
+}
+
+.carburetor-image {
+    width: 9vw; /* Makes the image responsive */
+    height: 18vh; /* Keeps the aspect ratio */
+    /* box-shadow: 2px 5px 4px black; */
+    object-fit: contain;
+}

@@ -1,0 +1,135 @@
+.product-card-page {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 9rem;
+    background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+.product-details-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem; /* Space below the product details */
+}
+
+.product-image {
+    width: 40%;
+}
+
+.product-info {
+    width: 60%;
+}
+
+.product-info h2 {
+    font-size: 1.8rem; /* Larger font size for product name */
+}
+
+.rating-reviews {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Space below rating section */
+}
+
+.rating-reviews span {
+    color: #F6BE00; /* Gold color for rated stars */
+    font-size: 1.5rem;
+}
+
+.price-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem; /* Space below price section */
+}
+
+.price {
+    font-size: 1.5rem; /* Adjust size as necessary */
+    font-weight: bold; /* Make price bold */
+}
+
+.mrp {
+    text-decoration: line-through; /* Strikethrough for MRP */
+    color: gray; /* Gray color for MRP */
+}
+
+.save {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Space below save message */
+}
+
+.vehicle-compatibility {
+    margin-bottom: 1rem; /* Space below vehicle compatibility section */
+}
+
+.cart-wishlist {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem; /* Space below cart-wishlist section */
+}
+
+.add-to-cart {
+    padding: 0.5rem 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.add-to-cart:hover {
+    background-color: darkgray; /* Darker shade on hover */
+}
+
+.wishlist-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropdown-section {
+    margin-top: 2rem;
+}
+
+.dropdown {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid #ccc; /* Add border to dropdown */
+    border-radius: 5px; /* Rounded corners for dropdown */
+    background-color: white; /* Background for dropdown */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+}
+
+.dropdown p {
+    margin-top: 0.5rem; /* Space above paragraph */
+}
+
+.customer-review-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #ccc; /* Divider line above the section */
+    padding: 2rem 8rem;
+}
+
+.customer-review-button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-bottom: 1rem; /* Space below the button */
+}
+
+.customer-review {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    text-align: left; /* Align text to the left */
+}
+
+.customer-review img {
+    border-radius: 50%; /* Rounded image for customer */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Space to the right of image */
+}

@@ -1,0 +1,88 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Use a standard font */
+}
+
+/* Centering the entire form in the middle of the page */
+.return-exchanges-container {
+    width: 41%;
+    margin: 0 auto; /* Horizontal centering */
+    background-color: white;
+    border-radius: 10px;
+    text-align: center; /* Center-aligning the text */
+    margin-top: 50px; /* Space above the form */
+    margin-bottom: 130px; /* Space below the form for the footer */
+}
+
+.return-exchanges-container h1 {
+    font-size: 24px;
+    
+    color: black;
+}
+
+/* Paragraph Styles */
+.return-exchanges-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Form Group Styles */
+.return-exchanges-container .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items in form group */
+}
+
+/* Input Styles */
+.return-exchanges-container .form-group input {
+    width: 80%; /* Make inputs responsive */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Input Focus Effect */
+.form-group input:focus {
+    border: 1px solid rgba(14, 14, 14); /* Dark black border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+.find-order-btn {
+    width: 80%; /* Make button responsive */
+    padding: 10px;
+    background-color: #6b3b8b; /* Background color */
+    color: white;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button Hover Effect */
+.find-order-btn:hover {
+    background-color: #512c6a;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px; /* Padding around footer content */
+    text-align: center; /* Center text in footer */
+    position: relative; /* Ensure it stays at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push to the bottom of the page */
+}
+
+/* Footer Text */
+footer p {
+    margin: 0; /* Remove default margin */
+    color: black; /* Text color */
+    font-size: 14px; /* Font size */
+}

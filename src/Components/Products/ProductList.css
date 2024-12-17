@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #333;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --hover-bg: rgba(0, 0, 0, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+.product-list-page-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 40px; /* Space between filter and product sections */
+}
+
+.product-list-page-container .filter-section {
+    width: 25%; /* Maintain width */
+    padding: 1rem; /* Padding for spacing */
+    box-shadow: 0 2px 8px var(--border-color); /* Softer shadow */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    height: auto; /* Auto-adjust height */
+}
+
+.product-list-page-container .product-section {
+    width: 75%; /* Maintain width */
+    margin-left: 20px; /* Gap between sections */
+}
+
+.product-list-page-container .product-header {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and title */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.product-list-page-container .product-header img {
+    width: 9vw; /* Responsive image width */
+    height: 18vh; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+.product-list-page-container .product-header h2 {
+    font-size: 3.2rem; /* Adjusted title size */
+    font-style: italic;
+    font-weight: 700; /* Bold title */
+    color: var(--primary-color); /* Darker contrast */
+}
+
+.product-list-page-container .filter-item {
+    margin-bottom: 15px; /* Increased margin */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.product-list-page-container .filter-item h4 {
+    cursor: pointer; /* Pointer cursor for headers */
+}
+
+.product-list-page-container .filter-item label {
+    display: flex;
+    align-items: center; /* Center vertically */
+    line-height: 1.5; /* Standardized height */
+}
+
+.product-list-page-container .filter-item input[type="checkbox"] {
+    height: 18px; /* Checkbox height */
+    width: 18px; /* Checkbox width */
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+.product-list-page-container .dropdown-icon {
+    margin-left: 5px;
+}
+
+.product-list-page-container .flex-cnt {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: space-between; /* Space between items */
+}
+
+.product-list-page-container .product-cnt {
+    border: 1px solid #ddd; /* Border around product */
+    padding: 10px; /* Internal padding */
+    margin: 10px 0; /* Space between products */
+    border-radius: 5px; /* Rounded corners */
+    flex: 1 1 calc(23% - 20px); /* Responsive product width */
+    max-width: calc(23% - 20px); /* Limit max width */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.product-list-page-container .product-cnt:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 12px var(--shadow-color); /* Elevate on hover */
+}
+
+.product-list-page-container .product-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-list-page-container .price {
+    font-weight: bold; /* Bold price */
+    color: #555; /* Slightly darker */
+}
+
+.add-to-bag-button {
+    padding: 0.5rem 1.5rem; /* Internal padding */
+    border: 1px solid black; /* Black border */
+    background-color: transparent; /* Transparent background */
+    color: black; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above button */
+    transition: background-color 0.3s ease; /* Button hover transition */
+}
+
+.add-to-bag-button:hover {
+    background-color: var(--hover-bg); /* Light background on hover */
+}
+
+/* Keyframes for pulse effect */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.05); /* Slightly larger */
+    }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+    .product-list-page-container .product-cnt {
+        flex: 1 1 calc(33% - 20px); /* 3 items per row */
+        max-width: calc(33% - 20px); /* Limit max width */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-list-page-container {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+    .product-list-page-container .filter-section,
+    .product-list-page-container .product-section {
+        width: 100%; /* Full width on small screens */
+        margin-left: 0; /* Remove left margin */
+    }
+    .product-list-page-container .product-cnt {
+        flex: 1 1 calc(50% - 20px); /* Two items per row */
+        max-width: calc(50% - 20px); /* Limit max width */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-list-page-container .product-cnt {
+        flex: 1 1 calc(100% - 20px); /* 1 item per row */
+        max-width: calc(100% - 20px); /* Limit max width */
+    }
+}

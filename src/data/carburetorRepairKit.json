@@ -1,0 +1,52 @@
+ {
+    "Carburetor Repair Kit" : {
+      "id" : 3,
+      "title": "Carburetor Repair Kit",
+      "image": "Engine Valve Set Glamor 2.webp",
+      "products": [
+        {
+          "id": 301,  
+          "save": "Save Rs. 320.00",
+          "img": "Carburetor repair kit Glamor 1.jpg",
+          "name": "Repair Kit Model 1",
+          "rating": 4,
+          "description": "Comprehensive repair kit.",
+          "price": "Rs. 1200.00",
+          "MRP": "Rs. 1490.00",
+          "stock": "In Stock"
+        },
+        {
+          "id": 302,  
+          "name": "Carburetor Model 1",
+          "img": "url_to_image_1.jpg",
+          "description": "Description for Carburetor Model 1",
+          "price": "$100",
+          "MRP": "$120",
+          "stock": "Available",
+          "save": "Save $20!",
+          "rating": 4
+        },
+        {
+          "name": "Carburetor Model 2",
+          "img": "url_to_image_2.jpg",
+          "description": "Description for Carburetor Model 2",
+          "price": "$110",
+          "MRP": "$130",
+          "stock": "Out of Stock",
+          "save": "Save $20!",
+          "rating": 5
+        },
+        {
+          "name": "Carburetor Model 1",
+          "img": "url_to_image_1.jpg",
+          "description": "Description for Carburetor Model 1",
+          "price": "$100",
+          "MRP": "$120",
+          "stock": "Available",
+          "save": "Save $20!",
+          "rating": 4
+        }
+      ]
+    }
+}
+   

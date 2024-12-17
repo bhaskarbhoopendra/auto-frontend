@@ -1,0 +1,82 @@
+.product-container {
+  text-align: left;
+  width: calc(16.66% - 5px); /* Reduce space between items */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for transform */
+}
+
+/* Add hover effect */
+.product-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulse effect on focus and active states */
+.product-container:focus,
+.product-container:active {
+  animation: pulse 0.5s infinite; /* Pulse effect */
+}
+
+/* Keyframes for pulse effect */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.05); /* Slightly larger */
+  }
+}
+
+.ImageTag {
+  background: rgba(240, 7, 7, 0.8);
+  display: inline-block;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  z-index: 1;
+  padding: 0 4px;
+  line-height: 16px;
+}
+
+.ImageTag:after {
+  content: "";
+  position: absolute;
+  border-color: rgba(240, 7, 7, 0.5) transparent rgba(240, 7, 7, 0.5) rgba(240, 7, 7, 0.8);
+  border-style: solid;
+  border-width: 8px;
+  left: 100%;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.MRP {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: rgba(24, 24, 24, 0.5) line-through;
+  color: rgb(202, 88, 88);
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Adjust the gap between the containers */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px; /* Add gap control for spacing */
+}
+
+/* Optional: Add transition for the product container */
+.product-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover and focus effects */
+}

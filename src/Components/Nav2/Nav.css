@@ -1,0 +1,131 @@
+/* Navbar Styling */
+.navbar2 {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #e0e0e0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation Links */
+.nav-links2 {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* Center-align the links */
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual List Items */
+.nav-links2 li {
+    margin: 0 2px;
+    position: relative;
+    list-style-type: none;
+}
+
+/* Anchor Tags Styling */
+.nav-links2 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 25px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.nav-links2 a:hover {
+    color: #f90
+}
+
+/* Dropdown Styles */
+.dropdown2 {
+    position: relative;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content2 {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: transparent;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0; /* Removed padding to style each column individually */
+    display: flex;
+    justify-content: flex-start; /* Align to left and adjust space */
+    z-index: 100;
+    border-radius: 4px;
+    width: auto; /* Let width be determined by content */
+    min-width: 250px; /* Set a minimum width to avoid collapsing too much */
+}
+
+/* Bike Column Styles */
+.bike-column {
+    background-color: #fff; /* White background for bike column */
+    padding: 10px 20px; /* Padding for content */
+    flex: 1; /* Ensures even width distribution */
+    text-align: left; /* Align content to the left */
+}
+
+/* Scooter Column Styles */
+.scooter-column {
+    background-color: #f5f5f5; /* Gray background for scooter column */
+    padding: 10px 20px; /* Padding for content */
+    flex: 1; /* Ensures even width distribution */
+    text-align: left; /* Align content to the left */
+}
+
+/* Column Heading */
+.column2 h4 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap; /* Prevents text wrapping */
+    padding-left: 0; /* Align heading with links */
+}
+
+/* List Styling */
+.column2 ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* List Items Styling */
+.column2 ul li {
+    margin-bottom: 5px;
+    white-space: nowrap; /* Prevent text wrapping */
+    padding-left: 0; /* Remove padding for alignment */
+}
+
+/* Links inside List Items */
+.column2 ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    padding-left: 0; /* Align links with heading */
+}
+
+/* Hover Effect for Links */
+.column2 ul li a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+/* Show dropdown on hover */
+.nav-links2 li:hover .dropdown-content2 {
+    display: flex;
+}
+
+
+/* Handle dropdown overflow for small screens */
+@media screen and (max-width: 768px) {
+    .dropdown-content2 {
+        width: 100%; /* Full width on small screens */
+        left: 0;
+        right: 0;
+    }
+}

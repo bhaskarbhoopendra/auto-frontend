@@ -1,0 +1,47 @@
+/* Engine.css */
+
+/* Container for each image item */
+.image-container {
+    text-align: center;
+    width: calc(20% - 10px);
+    perspective: 1000px; /* Enable perspective for flip effect */    
+}
+
+/* Base styles for the image */
+.image {
+    width: 100%;
+    height: 180px; /* Adjust height as needed */
+    object-fit: contain; /* Ensure the entire image is visible */
+    transition: transform 0.5s ease; /* Smooth transition for transform */
+}
+
+/* Flip effect on hover */
+.image-container:hover .image {
+    transform: rotateY(180deg); /* Flip the image */
+}
+
+/* Bounce effect */
+.image-container:hover .image {
+    animation: bounce 0.5s; /* Apply bounce animation */
+}
+
+/* Keyframes for bounce effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Bounce upwards */
+    }
+}
+
+/* Remove shadow effect on hover */
+.image-container:hover {
+    /* Removed box-shadow */
+}
+
+.name {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
